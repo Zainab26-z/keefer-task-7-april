@@ -83,10 +83,6 @@
   padding: 20px;
 }
 
-
-
-
-
 /* container-1 (banner and form) */
 .container-1 {
   display: flex;
@@ -320,16 +316,16 @@ textarea::placeholder {
   color: #fff;
 }
 .box-a{
-  width: 30%;
+  width: 33%;
 }
 /* box-b specific styles */
 .box-b {
-  width: 40%;
+  width: 34%;
   border-left: 1px solid rgb(168, 167, 167);
   border-right: 1px solid rgb(168, 167, 167);
 }
 .box-c{
-  width: 30%;
+  width: 33%;
   padding-left: 20px;
 }
 .box-b .divider {
@@ -633,13 +629,13 @@ textarea::placeholder {
       padding: 0px 15px;
   }
   .nav {
-     flex-direction: column;
+     display: block;
   }
-  /* .nav ul {
+  .nav ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-  } */
+  }
   .action-btn .btn {
     width: 30%;
     margin-left: 40%;
@@ -737,7 +733,7 @@ textarea::placeholder {
       flex-wrap: wrap;
   }
   .content-box-1 {
-      flex-basis: 100%;
+      flex-basis: 89%;
       padding: 20px 0px;
   }
   .content-box-2 {
@@ -748,9 +744,9 @@ textarea::placeholder {
     padding-left: 40px;
 }
   .content-box-3 {
-      flex-basis: 70%;
+      flex-basis: 80%;
       text-align: center;
-      padding-left:10;
+      padding-left:10%;
       padding-top: 40px;
   }
  
