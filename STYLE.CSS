@@ -83,6 +83,10 @@
   padding: 20px;
 }
 
+
+
+
+
 /* container-1 (banner and form) */
 .container-1 {
   display: flex;
@@ -121,7 +125,7 @@
 }
 
 .form .right-side p {
-  padding: 0px 15px;
+  padding-left: 50%;
   margin-top: 10px;
   color: #000;
   font-size: 1rem;
@@ -149,15 +153,6 @@
   font-size: 1.3rem;
   font-weight: bold;
 }
-
-/* .left-side {
-  flex-basis: 25%;
-}
-
-.right-side {
-  flex-basis: 75%;
-  padding-left: 40px;
-} */
 
 /* form inputs */
 .form-inputs {
@@ -288,9 +283,6 @@ textarea::placeholder {
   padding-top: 10px;
 }
 
-/* .box-actions {
-  display: flex;
-} */
 
 .box-actions .empty-space {
   flex-basis: 50%;
@@ -641,11 +633,23 @@ textarea::placeholder {
       padding: 0px 15px;
   }
   .nav {
-     
+     flex-direction: column;
   }
+  /* .nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  } */
+  .action-btn .btn {
+    width: 30%;
+    margin-left: 40%;
+}
+
   .container-1 {
       display: block;
+      padding: 50px 0px 0px 0px;
   }
+
   .banner-image,
   .form {
       flex-basis: 100%;
@@ -708,16 +712,19 @@ textarea::placeholder {
   .box-a {
       padding-bottom: 20px;
       width: 100%;
+      padding: 0px;
   }
   .box-b {
       border-left: none;
       border-right: none;
       padding-bottom: 20px;
       width: 100%;
+      padding: 0px;
   }
 
   .box-c{
     width: 100%;
+    padding: 0px;
   }
   .box-a:last-child {
       padding-top: 20px;
@@ -731,16 +738,22 @@ textarea::placeholder {
   }
   .content-box-1 {
       flex-basis: 100%;
-      padding: 40px 0px;
+      padding: 20px 0px;
   }
   .content-box-2 {
       flex-basis: 100%;
+      padding: 0px;
   }
+  .content-box-2 h1 {
+    padding-left: 40px;
+}
   .content-box-3 {
-      flex-basis: 80%;
-      padding: 40px 15px;
+      flex-basis: 70%;
       text-align: center;
+      padding-left:10;
+      padding-top: 40px;
   }
+ 
   .content-box-3 .action-btn .btn {
       width: 40% !important;
       left: 127px !important;
@@ -785,174 +798,216 @@ textarea::placeholder {
       order: 1;
       flex-basis: 50%;
   }
-  .sub-section .action-btn .btn {
-      left: 49px;
-  }
-}
-
-@media all and (min-width: 576px) and (max-width: 767px) {
-  #Header {
-    flex-direction: column;
-}
-#Header .left-logo img {
-    max-width: 100%;
-    width: 100%;
-}
-#Header .h-rightcontent {
-    justify-content: center;
-    padding: 10px 0px 0px 0px;
-}
-.content-wrapper,
-.main-contentcontainer {
-    padding: 0px 15px;
-}
-.nav {
+  .sub-section {
+    gap: 30%;
+    margin-bottom: 2rem;
+    align-items: center;
    
 }
-.container-1 {
-    display: block;
-}
-.banner-image,
-.form {
-    flex-basis: 100%;
-}
-.banner-image {
-    height: 400px;
-    background-position: center;
-}
-.form .right-side p {
-    font-size: 1rem;
-    line-height: 1.2rem;
-}
-.form p span {
-    font-size: 1.1rem;
-}
-.form-content > p {
-    font-size: 0.9rem;
-}
-.form-content > p > span {
-    font-size: 1rem;
-}
-.form-inputs form {
-    flex-basis: 65%;
-}
-.confi-logo {
-    flex-basis: 35%;
-}
-.form-content {
-    padding: 0 15px;
-}
-.form .left-side h3 {
-    font-size: 1.21rem;
-}
-.form-inputs form input {
-    height: 25px;
-    width: 74%;
-}
-.form .main-left-right {
-    padding-bottom: 0px;
-}
-#textarea textarea {
-    height: 50px;
-    margin-bottom: 0px;
-}
-textarea::placeholder {
-    font-size: 0.9rem;
-}
-.about-container .about-btn {
-    padding: 2px 0px;
-}
-.about-container .about-btn a {
-    font-size: 0.88rem;
-}
-.form {
-    padding-bottom: 4px;
-}
-.container-2 {
-    display: block;
-}
-.box-a {
-    padding-bottom: 20px;
-    width: 100%;
-}
-.box-b {
-    border-left: none;
-    border-right: none;
-    padding-bottom: 20px;
-    width: 100%;
-}
+.sub-section {
+  padding-left: 0px;
 
-.box-c{
-  width: 100%;
-}
-.box-a:last-child {
-    padding-top: 20px;
-}
-.box-a .logos img:last-child,
-.box-a .logos img:first-child {
-    width: 25%;
-}
-.content-wrapper {
-    flex-wrap: wrap;
-}
-.content-box-1 {
-    flex-basis: 100%;
-    padding: 40px 0px;
-}
-.content-box-2 {
-    flex-basis: 100%;
-}
-.content-box-3 {
-    flex-basis: 80%;
-    padding: 40px 15px;
-    text-align: center;
-}
-.content-box-3 .action-btn .btn {
-    width: 40% !important;
-    left: 127px !important;
-}
-.content-box-2 {
-    padding: 0 15px;
-}
-.practice-btn {
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: center;
-}
-.btn-shadow {
-    display: none;
-}
-.content-box-1 .title-special {
-    text-align: center;
-}
-.content-box-1 .footer-box h1 {
-    text-align: center;
-}
-.content-box-1 .footer-box {
-    padding: 40px 0px 0px 0px;
-}
-.logo-container {
-    padding: 20px 0px;
-}
-.logo-container .logo-item img {
-    width: 45%;
-}
-.shadow-line {
-    display: none;
-}
-.social-box .social-icons img {
-    width: 12%;
-}
-.box-actions .empty-space {
-    flex-basis: 50%;
-    order: 2;
-}
-.box-actions .action-btn {
-    order: 1;
-    flex-basis: 50%;
 }
 .sub-section .action-btn .btn {
-    left: 49px;
+  width: 75%;
+  
+}
+}
+@media all and (min-width: 576px) and (max-width: 767px) {
+  #Header {
+      flex-direction: column;
+  }
+  #Header .left-logo img {
+      max-width: 100%;
+      width: 100%;
+  }
+  #Header .h-rightcontent {
+      justify-content: center;
+      padding: 10px 0px 0px 0px;
+  }
+  .content-wrapper,
+  .main-contentcontainer {
+      padding: 0px 15px;
+  }
+  .nav {
+     display: block;
+  }
+  .nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .action-btn .btn {
+    width: 30%;
+    margin-left: 40%;
+}
+
+  .container-1 {
+      display: block;
+      padding: 50px 0px 0px 0px;
+  }
+
+  .banner-image,
+  .form {
+      flex-basis: 100%;
+  }
+  .banner-image {
+      height: 400px;
+      background-position: center;
+  }
+  .form .right-side p {
+      font-size: 1rem;
+      line-height: 1.2rem;
+  }
+  .form p span {
+      font-size: 1.1rem;
+  }
+  .form-content > p {
+      font-size: 0.9rem;
+  }
+  .form-content > p > span {
+      font-size: 1rem;
+  }
+  .form-inputs form {
+      flex-basis: 65%;
+  }
+  .confi-logo {
+      flex-basis: 35%;
+  }
+  .form-content {
+      padding: 0 15px;
+  }
+  .form .left-side h3 {
+      font-size: 1.21rem;
+  }
+  .form-inputs form input {
+      height: 25px;
+      width: 74%;
+  }
+  .form .main-left-right {
+      padding-bottom: 0px;
+  }
+  #textarea textarea {
+      height: 50px;
+      margin-bottom: 0px;
+  }
+  textarea::placeholder {
+      font-size: 0.9rem;
+  }
+  .about-container .about-btn {
+      padding: 2px 0px;
+  }
+  .about-container .about-btn a {
+      font-size: 0.88rem;
+  }
+  .form {
+      padding-bottom: 4px;
+  }
+  .container-2 {
+      display: block;
+  }
+  .box-a {
+      padding-bottom: 20px;
+      width: 100%;
+      padding: 0px;
+  }
+  .box-b {
+      border-left: none;
+      border-right: none;
+      padding-bottom: 20px;
+      width: 100%;
+      padding: 0px;
+  }
+
+  .box-c{
+    width: 100%;
+    padding: 0px;
+  }
+  .box-a:last-child {
+      padding-top: 20px;
+  }
+  .box-a .logos img:last-child,
+  .box-a .logos img:first-child {
+      width: 25%;
+  }
+  .content-wrapper {
+      flex-wrap: wrap;
+  }
+  .content-box-1 {
+      flex-basis: 100%;
+      padding: 20px 0px;
+  }
+  .content-box-2 {
+      flex-basis: 100%;
+      padding: 0px;
+  }
+  .content-box-2 h1 {
+    padding-left: 40px;
+}
+  .content-box-3 {
+      flex-basis: 70%;
+      text-align: center;
+      padding-left:10;
+      padding-top: 40px;
+  }
+ 
+  .content-box-3 .action-btn .btn {
+      width: 40% !important;
+      left: 127px !important;
+  }
+  .content-box-2 {
+      padding: 0 15px;
+  }
+  .practice-btn {
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: center;
+  }
+  .btn-shadow {
+      display: none;
+  }
+  .content-box-1 .title-special {
+      text-align: center;
+  }
+  .content-box-1 .footer-box h1 {
+      text-align: center;
+  }
+  .content-box-1 .footer-box {
+      padding: 40px 0px 0px 0px;
+  }
+  .logo-container {
+      padding: 20px 0px;
+  }
+  .logo-container .logo-item img {
+      width: 45%;
+  }
+  .shadow-line {
+      display: none;
+  }
+  .social-box .social-icons img {
+      width: 12%;
+  }
+  .box-actions .empty-space {
+      flex-basis: 50%;
+      order: 2;
+  }
+  .box-actions .action-btn {
+      order: 1;
+      flex-basis: 50%;
+  }
+  .sub-section {
+    gap: 30%;
+    margin-bottom: 2rem;
+    align-items: center;
+   
+}
+.sub-section {
+  padding-left: 0px;
+
+}
+.sub-section .action-btn .btn {
+  width: 75%;
+  
 }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
@@ -972,11 +1027,16 @@ textarea::placeholder {
       justify-content: space-between;
   }
   .box-a {
-      flex-basis: 48%;
+      flex-basis: 45%;
   }
   .box-b {
-      flex-basis: 48%;
+      flex-basis: 55%;
   }
+  .box-c {
+    width: 100%;
+    padding-left: 20%;
+    margin-top: 3rem;
+}
   .box-a:last-child {
       flex-basis: 100%;
       text-align: center;
@@ -996,13 +1056,26 @@ textarea::placeholder {
       width: 74%;
   }
   .sub-section .action-btn .btn {
-      width: 66%;
-      left: 40px;
+      width: 100%;
+     
   }
+  .box-a, .box-b {
+   padding: 0px;
+}
   .box-actions .btn {
       width: 50%;
       left: 50px;
   }
+
+  .box-actions .action-btn {
+    width: 100%;
+ padding-left: 40%;
+}
+
+.action-btn1 {
+  width: 100%;
+  padding-left: 15%;
+}
   .content-box-1 .btn-label h2 {
       font-size: 1.2rem;
   }
@@ -1030,7 +1103,8 @@ textarea::placeholder {
   }
 
   .box-title {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
+      margin-bottom: 2px;
   }
   .content-box-3 .action-btn .btn {
       width: 78% !important;
@@ -1064,6 +1138,11 @@ textarea::placeholder {
 .right-side {
   flex-basis: 25%;
   padding-left: 40px;
+  padding-right: 1rem;
+}
+
+.logos{
+  padding-left: 80px;
 }
 
 
@@ -1153,12 +1232,15 @@ textarea::placeholder {
   }
   .box-actions .btn {
       width: 65%;
-      left: 40px;
+      left: 38%
   }
   .sub-section .action-btn .btn {
       width: 100%;
       left: 50px;
   }
+  .sub-section {
+    gap: 15%;
+}
   .content-box-2 {
       padding: 0px 30px;
       text-align: justify;
@@ -1181,3 +1263,22 @@ textarea::placeholder {
   left: 43px;
   top: -10px;
 }
+
+@media (min-width: 1201px){
+  .sub-section {
+    gap: 20%;
+}
+.sub-section .action-btn .btn {
+  width: 100%;
+  left: 40%;
+}
+.sub-section .action-btn .btn {
+  width: 100%;
+  left: 50px;
+}
+ 
+
+}
+
+
+
